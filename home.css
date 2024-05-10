@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#ffe8e6, #ddd);
+    background-repeat: no-repeat;
+}
+
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 0.2px #ddd;
+    background: linear-gradient(#ddd, #fff7f9);
+    overflow: hidden;
+}
+
+.navbar img {
+    width: 80px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.idle {
+    color: #cf4033;
+    font-family: 'webfonts/Montserrat-Italic.ttf';
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    float: left;
+    color: #cf4033;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'FKGrotesk', sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    border-radius: 50px;
+    color: black;
+}
+
+.right-img img {
+    background-size: cover;
+    width: 40%;
+    height: 400px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 60px;
+    border-radius: 2.5cm;
+
+}
+
+.left-description {
+    color: #615c5c;
+    font-size: 22px;
+    margin-top: 140px;
+    margin-left: 120px;
+    max-width: 600px;
+    float: left;
+    font-family: 'FKGrotesk', sans-serif;
+    text-decoration: none;
+
+}
+
+.left-img img {
+
+    background-size: cover;
+    width: 40%;
+    height: 400px;
+    float: left;
+    margin-top: 150px;
+    margin-left: 90px;
+    border-radius: 2.5cm;
+}
+
+.right-description {
+    color: #615c5c;
+    font-size: 22px;
+    margin-top: 180px;
+    margin-right: 120px;
+    max-width: 420px;
+    float: right;
+    font-family: 'FKGrotesk', sans-serif;
+    text-decoration: none;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(+10000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-10000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+
+.right-img img {
+    animation-name: slideInRight;
+    animation-duration: 3s;
+}
+
+.left-description {
+    animation-name: slideInLeft;
+    animation-duration: 3s;
+}
+
+.left-img {
+    animation-name: slideInLeft;
+    animation-duration: 5s;
+}
+
+.right-description {
+    animation-name: slideInRight;
+    animation-duration: 6s;
+}

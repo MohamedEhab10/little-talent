@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: linear-gradient(#ffe8e6, #ddd);
+    background-repeat: no-repeat;
+    font-family: 'Montserrat',
+        sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    color: #1B1C34;
+    align-items: center;
+
+}
+
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 0.2px #ddd;
+    background: linear-gradient(#ddd, #fff7f9);
+    overflow: hidden;
+}
+
+.navbar img {
+    width: 80px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.idle {
+    color: #cf4033;
+    font-family: 'webfonts/Montserrat-Italic.ttf';
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    float: left;
+    color: #cf4033;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'FKGrotesk', sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    border-radius: 50px;
+    color: black;
+}
+
+
+.team {
+    background-color: #ddd;
+    border-radius: 50cm;
+}
+
+
+.container {
+    width: 50%;
+    padding-top: 50px;
+    margin: 25px auto;
+    height: 20%;
+}
+
+.grid {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 3%;
+}
+
+.card {
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(171.38deg, #F9FBFC 3.36%, #E2EAF5 95.69%);
+    box-shadow: 0px 0px 20px rgba(227, 235, 246, 0.3);
+    border-radius: 30px;
+    text-align: right;
+}
+
+.card:hover {
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    transition-duration: 0.5s;
+}
+
+
+.card_img img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    float: left;
+}
+
+.card_body {
+    padding: 0px 0px;
+}
+
+.card_title {
+    font-weight: 800;
+    color: #25262C;
+    font-size: 32px;
+    padding-bottom: 15px;
+    float: center;
+
+}
+
+.designation {
+    font-weight: 700;
+    font-size: 22px;
+    color: #959EAF;
+
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-10000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.nada-ashraf {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
+
+.nada-ahmed {
+    animation-name: slideInLeft;
+    animation-duration: 3s;
+}
+
+.fatma {
+    animation-name: slideInLeft;
+    animation-duration: 5s;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .card_title {
+        font-size: 26px;
+    }
+
+    .designation {
+        font-size: 18px;
+    }
+
+}
